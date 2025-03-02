@@ -1,0 +1,38 @@
+﻿ @model IEnumerable<System.Security.Claims.Claim>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>User Cliam</title>
+</head>
+<body>
+    <a asp-action="Create">Create</a>
+    <table class="table table-hover table-bordered">
+        <tr>
+            <td>Subject</td>
+           <td>Issuer</td>
+           <td>Type</td>
+           <td>Value</td>
+           <td>Delete</td>
+
+        </tr>
+        @foreach (var item in Model)
+        {        <tr>
+            <td>@item.Subject</td>
+            <td>@item.Issuer</td>
+            <td>@item.Type</td>
+                <td>@item.Value</td>
+                <td>
+                    <a asp-action="Delete" asp-route-claimType="@item.Type" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }    
+      
+    </table>
+</body>
+</html>

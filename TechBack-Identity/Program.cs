@@ -16,7 +16,9 @@ builder.Services.AddIdentity<User, Role>()
     .AddEntityFrameworkStores<DataBaseContext>()
     .AddDefaultTokenProviders()
     ///می تونیم ارور رو شخصی سازی کنیم
-     .AddErrorDescriber<CustomIdentityError>();
+     .AddErrorDescriber<CustomIdentityError>()
+     .AddPasswordValidator<MyPasswordValidetor>();
+builder.Services.AddScoped<IUserClaimsPrincipalFactory<User>,AddMyClaims>();
 // تنظیمات هویت کاربران
 builder.Services.Configure<IdentityOptions>(option =>
 {
