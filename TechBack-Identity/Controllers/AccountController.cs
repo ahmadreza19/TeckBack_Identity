@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
+using System.Security.Claims;
 using TechBack_Identity.Models.Dto;
 using TechBack_Identity.Models.Entitys;
 using TechBack_Identity.Models.Register;
@@ -145,10 +147,10 @@ namespace TechBack_Identity.Controllers
                 return RedirectToAction("TwoFactorLogin", new { login.UserName, login.IsPersistent });
             }
             if (resulte.IsLockedOut)
-            { 
-            
+            {
+
             }
-                ModelState.AddModelError(string.Empty, "");
+            ModelState.AddModelError(string.Empty, "");
             return View();
         }
         public IActionResult TwoFactorLogin(string UserName, bool IsPersistent)
@@ -163,17 +165,17 @@ namespace TechBack_Identity.Controllers
 
             if (provider.Contains("Phone"))
             {
-                string smacode=_userManager.GenerateTwoFactorTokenAsync(user, "Phone").Result;
-                SMSService  sMSService=new SMSService();
-                sMSService.Send(user.PhoneNumber,smacode);
+                string smacode = _userManager.GenerateTwoFactorTokenAsync(user, "Phone").Result;
+                SMSService sMSService = new SMSService();
+                sMSService.Send(user.PhoneNumber, smacode);
                 Model.IsPersistent = IsPersistent;
                 Model.Provider = "Phone";
             }
             else if (provider.Contains("Email"))
             {
                 string Emailcode = _userManager.GenerateTwoFactorTokenAsync(user, "Email").Result;
-                EmailService EmailService=new EmailService();
-                EmailService.Execute(user.Email,$"Two Factor{Emailcode}","Two Factor Loig");
+                EmailService EmailService = new EmailService();
+                EmailService.Execute(user.Email, $"Two Factor{Emailcode}", "Two Factor Loig");
                 Model.IsPersistent = IsPersistent;
                 Model.Provider = "Email";
             }
@@ -182,21 +184,22 @@ namespace TechBack_Identity.Controllers
         [HttpPost]
         public IActionResult TwoFactorLogin(TwoFactorLoginDto twoFactor)
         {
-            var user=_signInManager.GetTwoFactorAuthenticationUserAsync().Result;
+            var user = _signInManager.GetTwoFactorAuthenticationUserAsync().Result;
             if (user == null)
             {
                 return BadRequest();
             }
-            var reulte = _signInManager.TwoFactorSignInAsync(twoFactor.Provider,twoFactor.Code,  twoFactor.IsPersistent, false).Result;
+            var reulte = _signInManager.TwoFactorSignInAsync(twoFactor.Provider, twoFactor.Code, twoFactor.IsPersistent, false).Result;
             if (reulte.Succeeded)
             {
                 return Redirect("index");
-            }else if (reulte.IsLockedOut)
+            }
+            else if (reulte.IsLockedOut)
             {
-                ModelState.AddModelError("حساب کاربری قفل شده است","");
+                ModelState.AddModelError("حساب کاربری قفل شده است", "");
                 return View();
             }
-            else 
+            else
             {
                 ModelState.AddModelError("", "کد وارد شده صحیح نیست ");
                 return View();
@@ -322,6 +325,57 @@ namespace TechBack_Identity.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
+        public IActionResult ExternalLogin(string ReturnUrl)
+        {
+            string url = Url.Action(nameof(CallBack), "Account", new
+            {
+                ReturnUrl
+            });
+            var propertis = _signInManager.ConfigureExternalAuthenticationProperties("Google", url);
+            return new ChallengeResult("Google", propertis);
+
+        }
+        public IActionResult CallBack(string ReturnUrl)
+        {
+            var logininfo = _signInManager.GetExternalLoginInfoAsync().Result;
+            var email = logininfo.Principal.FindFirst(ClaimTypes.Email)?.Value ?? null;
+            if (email == null)
+            {
+                return BadRequest();
+            }
+            var FirstName = logininfo.Principal.FindFirst(ClaimTypes.GivenName)?.Value ?? null;
+            var lastName = logininfo.Principal.FindFirst(ClaimTypes.Surname)?.Value ?? null;
+            var singnin = _signInManager.ExternalLoginSignInAsync("Google", logininfo.ProviderKey, false, true).Result;
+            if (singnin.Succeeded)
+            {
+                if (Url.IsLocalUrl(ReturnUrl))
+                {
+                    return RedirectToAction("index");
+                }
+                return RedirectToAction("index", "Home");
+            }
+            else if (singnin.RequiresTwoFactor)
+            {
+                //به صفحه ورود دو مرحله ارسال میکنم
+            }
+            var user = _userManager.FindByEmailAsync(email).Result;
+            if (user == null)
+            {
+                User newUser = new User()
+                {
+                    UserName = email,
+                    Email = email,
+                    Name = FirstName,
+                    EmailConfirmed = true,
+                    LastName = lastName
+                };
+                var resuletAdduser=_userManager.CreateAsync(newUser).Result;
+                user = newUser;
+            }
+            var resulteaddlogin = _userManager.AddLoginAsync(user, logininfo).Result;
+            _signInManager.SignInAsync(user,false).Wait();
+            return Redirect("/");
+        }
     }
 }
-//20-09

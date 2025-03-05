@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using TechBack_Identity.Data;
 using TechBack_Identity.Helpers;
@@ -18,6 +19,12 @@ builder.Services.AddIdentity<User, Role>()
     ///می تونیم ارور رو شخصی سازی کنیم
      .AddErrorDescriber<CustomIdentityError>()
      .AddPasswordValidator<MyPasswordValidetor>();
+builder.Services.AddAuthentication()
+    .AddGoogle(Option =>
+    {
+        Option.ClientId = "3590840009-5gv514ogqirci4cjlc6lrttr9vt8tnt8.apps.googleusercontent.com";
+        Option.ClientSecret= "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";
+    });
 builder.Services.AddScoped<IUserClaimsPrincipalFactory<User>,AddMyClaims>();
 // تنظیمات هویت کاربران
 builder.Services.Configure<IdentityOptions>(option =>

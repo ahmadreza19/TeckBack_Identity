@@ -661,3 +661,4 @@ C:\Users\AhmadReza\Desktop\Test\TechBack-Identity\TeckBack_Identity\TechBack-Ide
 C:\Users\AhmadReza\Desktop\Test\TechBack-Identity\TeckBack_Identity\TechBack-Identity\obj\Debug\net9.0\TechBack-Identity.pdb
 C:\Users\AhmadReza\Desktop\Test\TechBack-Identity\TeckBack_Identity\TechBack-Identity\obj\Debug\net9.0\TechBack-Identity.genruntimeconfig.cache
 C:\Users\AhmadReza\Desktop\Test\TechBack-Identity\TeckBack_Identity\TechBack-Identity\obj\Debug\net9.0\ref\TechBack-Identity.dll
+C:\Users\AhmadReza\Desktop\Test\TechBack-Identity\TeckBack_Identity\TechBack-Identity\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll

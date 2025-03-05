@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\views\\userclaim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\views\\userclaim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\controllers\\userclaimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\controllers\\userclaimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\helpers\\addmyclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\helpers\\addmyclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\views\\userclaim\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\views\\userclaim\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|c:\\users\\ahmadreza\\desktop\\test\\techback-identity\\teckback_identity\\techback-identity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AE5E4C82-6291-464C-B64F-DDCB00D3690E}|TechBack-Identity\\TechBack-Identity.csproj|solutionrelative:techback-identity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,81 +74,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "TechBack-Identity\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "TechBack-Identity\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T11:59:07.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TechBack-Identity\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "TechBack-Identity\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAFwBAAAAAAAAAAAmwHgBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:07:13.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Program.cs",
               "RelativeDocumentMoniker": "TechBack-Identity\\Program.cs",
               "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Program.cs",
               "RelativeToolTip": "TechBack-Identity\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T14:50:32.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddMyClaims.cs",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Helpers\\AddMyClaims.cs",
-              "RelativeDocumentMoniker": "TechBack-Identity\\Helpers\\AddMyClaims.cs",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Helpers\\AddMyClaims.cs",
-              "RelativeToolTip": "TechBack-Identity\\Helpers\\AddMyClaims.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T14:25:08.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TechBack-Identity\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TechBack-Identity\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T14:00:35.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\UserClaim\\Create.cshtml",
-              "RelativeDocumentMoniker": "TechBack-Identity\\Views\\UserClaim\\Create.cshtml",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\UserClaim\\Create.cshtml",
-              "RelativeToolTip": "TechBack-Identity\\Views\\UserClaim\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-02T13:37:13.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\UserClaim\\Index.cshtml",
-              "RelativeDocumentMoniker": "TechBack-Identity\\Views\\UserClaim\\Index.cshtml",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Views\\UserClaim\\Index.cshtml*",
-              "RelativeToolTip": "TechBack-Identity\\Views\\UserClaim\\Index.cshtml*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T12:50:41.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserClaimController.cs",
-              "DocumentMoniker": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Controllers\\UserClaimController.cs",
-              "RelativeDocumentMoniker": "TechBack-Identity\\Controllers\\UserClaimController.cs",
-              "ToolTip": "C:\\Users\\AhmadReza\\Desktop\\Test\\TechBack-Identity\\TeckBack_Identity\\TechBack-Identity\\Controllers\\UserClaimController.cs",
-              "RelativeToolTip": "TechBack-Identity\\Controllers\\UserClaimController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAWwDwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T12:43:02.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T07:49:59.564Z"
             }
           ]
         }
